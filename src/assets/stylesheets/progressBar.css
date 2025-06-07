@@ -1,6 +1,6 @@
 .progress-bar {
   display: flex;
-  
+  border-bottom: 1px solid #ccc;
   justify-content: space-between;
   margin-bottom: 24px;
   font-family: Arial, sans-serif;
