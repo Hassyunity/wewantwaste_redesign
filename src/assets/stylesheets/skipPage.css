@@ -1,0 +1,315 @@
+
+.skip-container {
+  min-height: 100vh;
+  background: linear-gradient(to right, #28317C, #1A1F71, #000000);
+  color: white;
+  padding: 24px;
+  box-sizing: border-box;
+  padding-bottom: 80px;
+  font-family: 'Inter', sans-serif;
+}
+
+.skip-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.skip-header h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.skip-header p {
+  color: #aaa;
+  margin-top: 8px;
+}
+
+.skip-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.skip-card {
+  background-color: #1c1c21;
+  border: 2px solid #333;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.2s, border 0.2s;
+}
+
+.skip-card:hover {
+  transform: translateY(-5px);
+}
+
+.skip-card.selected {
+  border-color: #3b82f6;
+}
+
+.skip-image-container {
+  position: relative;
+}
+
+.skip-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.skip-badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: #3b82f6;
+  color: white;
+  font-size: 12px;
+  padding: 4px 12px;
+  border-radius: 999px;
+}
+
+.skip-badge.not-allowed {
+  left: 8px;
+  right: auto;
+  top: 8px;
+  background-color: #0e0e11;
+  color: #EAB308;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.skip-details {
+  padding: 16px;
+}
+
+.skip-details h2 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.hire-period {
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 8px;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #60a5fa;
+  margin-bottom: 16px;
+}
+
+.skip-select-button {
+  width: 100%;
+  padding: 10px;
+  font-weight: 500;
+  background-color: #2a2a2e;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.skip-select-button:hover {
+  background-color: #35353a;
+}
+
+.skip-select-button.disabled {
+  background-color: #3b82f6;
+  cursor: default;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.skip-summary {
+  position: fixed;
+  padding-top: 80px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1a1a1e;
+  border-top: 1px solid #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  z-index: 50;
+}
+
+.summary-price {
+  color: #60a5fa;
+  font-weight: 600;
+}
+
+.summary-period {
+  color: #aaa;
+  margin-left: 8px;
+}
+
+.summary-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.back-btn,
+.continue-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.back-btn {
+  background-color: #2c2c32;
+  border: 1px solid #444;
+  color: white;
+}
+
+.back-btn:hover {
+  background-color: #987426;
+}
+
+.continue-btn {
+  background-color: #3b82f6;
+  margin-right: 40px;
+  color: white;
+}
+
+.continue-btn:hover {
+  background-color: #2563eb;
+}
+
+/* Responsive pour tablette */
+@media (max-width: 768px) {
+  .skip-header h1 {
+    font-size: 24px;
+  }
+
+  .skip-header p {
+    font-size: 14px;
+  }
+
+  .skip-details h2 {
+    font-size: 16px;
+  }
+
+  .hire-period {
+    font-size: 13px;
+  }
+
+  .price {
+    font-size: 18px;
+  }
+
+  .skip-summary {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .summary-buttons {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .back-btn,
+  .continue-btn {
+    width: 48%;
+  }
+
+  .continue-btn {
+    margin-right: 0;
+  }
+
+  /* Barre de progression responsive */
+  .progress-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .progress-step {
+    flex-direction: row;
+    align-items: center;
+    flex: unset;
+    width: 100%;
+  }
+
+  .step-label {
+    margin-left: 12px;
+    font-size: 14px;
+    white-space: normal;
+    word-break: break-word;
+  }
+
+  .step-line {
+    display: none;
+  }
+}
+
+/* Responsive pour mobile */
+@media (max-width: 480px) {
+  .skip-container {
+    padding: 16px;
+  }
+
+  .skip-header h1 {
+    font-size: 20px;
+  }
+
+  .skip-header p {
+    font-size: 13px;
+  }
+
+  .skip-details {
+    padding: 12px;
+  }
+
+  .skip-details h2 {
+    font-size: 14px;
+  }
+
+  .hire-period,
+  .price {
+    font-size: 14px;
+  }
+
+  .skip-select-button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .skip-summary {
+    padding: 12px 16px;
+  }
+
+  .summary-price {
+    font-size: 16px;
+  }
+
+  .summary-buttons {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .back-btn,
+  .continue-btn {
+    width: 100%;
+  }
+
+  .step-number {
+    width: 24px;
+    height: 24px;
+    font-size: 12px;
+  }
+
+  .step-label {
+    font-size: 13px;
+  }
+}

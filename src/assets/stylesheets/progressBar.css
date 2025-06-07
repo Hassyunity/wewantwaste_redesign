@@ -1,0 +1,32 @@
+.progress-bar {
+  display: flex;
+  
+  justify-content: space-between;
+  margin-bottom: 24px;
+  font-family: Arial, sans-serif;
+  user-select: none;
+}
+
+.progress-step {
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex: 1;
+  cursor: default;
+}
+
+.step-label {
+  margin-left: 8px;
+  white-space: nowrap;
+  color: #666;
+}
+
+.progress-step.completed .step-label {
+  color: #3b82f6;
+}
+
+.progress-step.active .step-label {
+  color: #2563eb;
+  font-weight: bold;
+  font-size: 20px;
+}
