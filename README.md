@@ -1,54 +1,82 @@
-# React + TypeScript + Vite
+# 📦 Skip Size Selection Page — WeWantWaste Redesign
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React interface developed with **Vite**, **TypeScript**, and styled with **CSS**
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React** — Reactive user interface  
+- **Vite** — Fast bundler for development  
+- **TypeScript** — Improved readability and maintainability  
+- **FontAwesome** — Vector icons  
+- **Classic CSS** — Used for styling
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🛠️ Installation et Lancement
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 1. Clone le projet
+Hassy
+```bash
+🧩 Structure du projet
+wewantwaste-redesign/
+│
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+├── public/
+│   └── images/
+│       ├── placeholder-skip.jpg (default skip image)
+│       └── logo.png (website logo)
+│
+├── src/
+│   ├── assets/
+│   │   └── stylesheets/
+│   │       ├── skipPage.css
+│   │       └── progressBar.css
+│   ├── components/
+│   │   └── SkipSizePage.tsx
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── index.css
+│
+├── tailwind.config.js
+├── vite.config.ts
+├── package.json
+└── README.md
+
+---
+
+✅ Features  
+🎯 Dynamic skip selection from a provided API
+
+🛑 Filtering by allowed / disallowed sizes on the route
+
+📊 Visual progress bar with clear delimiters
+
+🎨 Animated hover effects for better appeal
+
+🔙 Color change on the "Back" button
+
+📱 Responsive and modern design adapted for mobiles and tablets
+
+🔧 Clear and easily maintainable code
+
+```bash
+
+git clone git@github.com:Hassyunity/wewantwaste_redesign.git
+cd wewantwaste-redesign
+npm install
+npm run dev
+
+## 📸 Preview
+
+Here are some screenshots of the interface:
+
+![Skip Page](./public/images/screensh_skipPage)
+
+## 👨‍💻 Author
+
+Project developed by Hassy Tsihoarana [Portfolio](https://hassy.onrender.com/) — ✨
+
